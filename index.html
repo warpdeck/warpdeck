@@ -16,13 +16,27 @@
             overflow: hidden; /* Prevent scrollbars if logo is large */
         }
         img {
-            max-width: 90%; /* Prevent logo from exceeding screen width */
-            max-height: 90%; /* Prevent logo from exceeding screen height */
+            max-width: 70%; /* Prevent logo from exceeding screen width */
+            max-height: 70%; /* Prevent logo from exceeding screen height */
             display: block; /* Remove extra space below image */
+            transition: 0.3s; /* Add transition for scaling effect */
+            opacity: 0.9; /* Set initial opacity */
+        }
+        img:hover {
+            transform: scale(1.1); /* Scale image on hover */
+            opacity: 1; /* Full opacity on hover */
+        }
+        a {
+            display: flex; /* Make the link a flex container */
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+            /* Apply similar constraints to the link as the image had */
         }
     </style>
 </head>
 <body>
-    <img src="assets/warpdeck-square-logo.svg" alt="WarpDeck Logo">
+    <a href="https://x.com/warpdeck" target="_blank" rel="noopener noreferrer">
+        <img src="assets/warpdeck-square-logo.svg" alt="WarpDeck Logo">
+    </a>
 </body>
 </html>
