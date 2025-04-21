@@ -11,7 +11,7 @@
 
 OpenAI recently released a guide on building agents which contains some misguided takes like the below:
 
-![Background info](./img/openai-agent-guide-critique-1.jpeg)
+![Background info](./img/openai-agent-guide-critique.jpeg)
 
 This callout initially angered me, but after starting to write a response I realized: thinking about agent frameworks is complicated! There are probably 100 different agent frameworks, there are a lot of different axes to compare them on, sometimes they get conflated (like in this quote). There is a lot of hype, posturing, and noise out there. There is very little precise analysis or thinking being done about agent frameworks. This blog is our attempt to do so. We will cover:
 
@@ -367,7 +367,7 @@ If we revisit OpenAI's stance, we find it to be premised on false dichotomies th
 
 Let's break down specific parts I take issue with:
 
-![What did OpenAI get wrong in their take](./img/openai-agent-guide-critique-2.jpeg)
+![What did OpenAI get wrong in their take](./img/openai-agent-guide-critique.jpeg)
 
 **"Declarative vs non-declarative graphs":**
 
