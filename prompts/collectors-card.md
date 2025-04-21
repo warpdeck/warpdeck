@@ -21,7 +21,7 @@ Critical: use the attached image for white warpdeck logo reference. DONT change 
 "year": "2025",
 "colors": ["red", "white", "dark gray"]
 },
-"medium": "3D render, high-resolution digital art",
+"medium": "3D render, high-resolution photoreal",
 "size": "1080px by 1080px"
 }
 
