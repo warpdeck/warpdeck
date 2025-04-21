@@ -11,7 +11,7 @@
 
 OpenAI recently released a guide on building agents which contains some misguided takes like the below:
 
-![Background info](./img/Go0FliaXoAANDWD.jpeg)
+![Background info](./img/openai-agent-guide-critique-1.jpeg)
 
 This callout initially angered me, but after starting to write a response I realized: thinking about agent frameworks is complicated! There are probably 100 different agent frameworks, there are a lot of different axes to compare them on, sometimes they get conflated (like in this quote). There is a lot of hype, posturing, and noise out there. There is very little precise analysis or thinking being done about agent frameworks. This blog is our attempt to do so. We will cover:
 
@@ -68,7 +68,7 @@ I like Anthropic’s definition better for a few reasons:
 
 Later in the blog post, Anthropic defines agents as “… typically just LLMs using tools based on environmental feedback in a loop.”
 
-![What is an agent](./img/58d9f10c985c4eb5d53798dea315f7bb5ab6249e-2401x1000.webp)
+![What is an agent](./img/agent-definition-diagram.webp)
 
 Despite their grandiose definition of an agent at the start, this is basically what OpenAI means as well.
 
@@ -104,7 +104,7 @@ The tricky part is exactly that - making it reliable. You can make a demo that l
 
 We did a survey of agent builders a few months ago and asked them: _“What is your biggest limitation of putting more agents in production?”_ The number one response by far was “performance quality” - it’s still really hard to make these agents work.
 
-![What is hard about building agents](./img/67347b1aed9686aad4544fef_9.-What-is-your-biggest-limitation.svg)
+![What is hard about building agents](./img/agent-limitations-survey.svg)
 
 _What causes agents to perform poorly sometimes?_ The LLM messes up.
 
@@ -171,7 +171,7 @@ Reliability does not track 100% with predictability, but in practice they can be
 
 Where you want to be on this curve is pretty specific to your application. LangGraph can be used to build applications anywhere on this curve, allowing you to move to the point on the curve that you want to be.
 
-![Workflows vs Agents](./img/Screenshot-2025-04-20-at-10.43.31-AM.png)
+![Workflows vs Agents](./img/workflow-vs-agent-spectrum.png)
 
 **High floor, low ceiling:**
 
@@ -234,7 +234,7 @@ There a bunch of ways to do this! Handoffs are one way. This is an agent abstrac
 
 But the best way for these agents to communicates can sometimes be workflows. Take all the workflow diagrams in Anthropic’s blog post, and replace the LLM calls with agents. This blend of workflows and agents often gives the best reliability.
 
-![Multi Agent](./img/7418719e3dab222dccb379b8879e1dc08ad34c78-2401x1000.webp)
+![Multi Agent](./img/multi-agent-workflow-diagram.webp)
 
 Again - agentic systems are not just workflows, or just an agent. They can be - and often are - a combination of the two. As Anthropic points out in their blog post:
 
@@ -367,7 +367,7 @@ If we revisit OpenAI's stance, we find it to be premised on false dichotomies th
 
 Let's break down specific parts I take issue with:
 
-![What did OpenAI get wrong in their take](./img/Go0FliaXoAANDWD-1.jpeg)
+![What did OpenAI get wrong in their take](./img/openai-agent-guide-critique-2.jpeg)
 
 **"Declarative vs non-declarative graphs":**
 
